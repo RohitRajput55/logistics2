@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background: palegoldenrod;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: orange;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: whitesmoke;
+    position: fixed;
+    box-shadow: 0 8px 12px rgb(15 54 55 / 15%);
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.logo img {
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nbar p {
+    margin-left: -100px;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navl {
+    display: flex;
+    align-items: center;
+   gap: 5vw;
+}
+
+.navl li a {
+    font-size: 1.2vw;
+    color: #000;
+    padding: 8px 16px;
+    transition: ease all .5s;
+    border-radius: 15px;
+}
+
+.navl li a.active {
+    background: palegoldenrod;
+}
+.navl a:hover {
+    background: palegoldenrod;
+}
+
+#menu i {
+    font-size: 1.5vw;
+    z-index: 10001;
+    display: none;
+    cursor: pointer;
+}
+
+#cart {
+    font-size: 2vw;
+
+}
+
+#hero {
+    width: 100%;
+    height: 100%;
+    padding: 4.5rem 0 1.5rem;
+    background-color: palegoldenrod;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    padding: 2vw 4vw;
+    
+}
+#hero-txt {
+   width: 90%;
+   font-size: 3vw;
+   position: absolute;
+   padding: 2vw 4vw;
+   margin-top: 10%;
+   align-items: center;
+   text-align: center;
+   color: #fff;
+}
+
+#hero-txt p {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+button {
+    padding: 12px 22px;
+    background: palegoldenrod;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button i {
+    margin-left: 9px;
+    color: green;
+    text-align: center;
+    font-size: 1.5vw;
+    
+}
+button:hover{
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.15);
+    background: transparent;
+    color: #fff;
+    border: 2px solid palegoldenrod;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+.banner1 {
+    background-image:  linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('https://img.freepik.com/free-photo/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative_123827-24177.jpg?w=1060&t=st=1701672962~exp=1701673562~hmac=fffebd929f58e80b044a9d809c47a9272669a28231dafc2d92c7e18a16cb39ab');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner2 {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('https://img.freepik.com/free-photo/aerial-view-cargo-ship-cargo-container-harbor_335224-1380.jpg?w=1060&t=st=1701673047~exp=1701673647~hmac=115dca3b8a0ca1435bccd18508b26453bc52eca2e30c35b7a46084d41ec562fb');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner3 {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('https://img.freepik.com/free-photo/port-de-barcelona-night_1398-4568.jpg?w=1060&t=st=1701673145~exp=1701673745~hmac=09d0856786e1b729cef4adab2b3f198133940a925518dc39c882e25a48b4008b');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner4 {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('https://img.freepik.com/free-photo/aerial-view-cargo-ship-cargo-container-harbor_335224-1370.jpg?w=1060&t=st=1701673201~exp=1701673801~hmac=0cb8ee7ed099015c2df9b565cbdaa29553eb01f3c11b63cbe29495486508bbfe');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner5 {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('https://img.freepik.com/free-photo/international-container-cargo-ship-harborfreight-transportation-shipping-ai-generative_123827-23695.jpg?w=1060&t=st=1701673292~exp=1701673892~hmac=1f0826643c0402d060e01aefa812caca3d5043844214944f6303a3b32575e0f1');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ctgs {
+    width: 100%;
+    height: 100%;
+    padding: 2vw 4vw;
+}
+
+#cont {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cont h1 {
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+
+
+#cards {
+    padding-top: 2vw;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+
+#cards #card1 {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all ease .5s;
+}
+
+#cards #card1:hover {
+    scale: 1.04;
+}
+
+#card1 img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+
+#card1 h3 {
+    position: absolute;
+    
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    background: orange;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+#cards #card1 p{
+    position: absolute;
+    top: 30%;
+    width: 200px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    padding: 7px 12px;
+    border-radius: 4px;
+    
+
+
+}
+
+
+
+#about {
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+#img5 img {
+    width: 700px;
+    height: 400px;
+}
+#atxt .btn {
+    padding: 12px 22px;
+    background: palegoldenrod;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#ctn::-webkit-scrollbar {
+    display: none;
+}
+#cutm {
+    padding: 2vw 4vw;
+}
+
+#cutm h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+#cc {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 35px 24px;
+}
+
+#cc #ctn {
+    position: relative;
+    height: 422px;
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all ease .5s;
+}
+
+#cc #ctn:hover {
+    scale: 1.04;
+}
+
+#ctn img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#ctn h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    background: palegoldenrod;
+    border-radius: 4px;
+}
+#rp p{
+    padding: 1vw;
+    position: absolute;
+    width: 270px;
+}
+
+#rp #star {
+    margin-top: 10%;
+    text-align: center;
+    color: rgb(232, 232, 30);
+}
+#ft {
+    width: 100%;
+    margin-top: 5%;
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    background: palegoldenrod;
+    justify-content: space-between;
+}
+
+#ft #ftxt h1 {
+    font-size: 4vw;
+  
+
+}
+
+#ft #ftxt p {
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+#ft img {
+    width: 500px;
+    height: 500px;
+}
+#ft #sc i {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    font-size: 3vw;
+    transition: all ease .5s;
+    
+}
+
+#ft #sc i:hover {
+    color: green;
+    scale: 1.09;
+}
+
+#lt {
+    width: 100%;
+    height: 14%;
+    align-items: center;
+    text-align: center;
+    background: whitesmoke;
+    padding: 1.5vw;
+}
+
+@media(max-width: 1080px){
+    .nbar {
+        padding: 17px 58px;
+    }
+
+    #hero-txt {
+        padding: 0 100px;
+    }
+}
+
+@media(max-width: 991px) {
+        .nbar {
+            padding: 17px 4%;
+        }
+
+        .swiper-slide button {
+            margin: 0;
+        }
+
+        #hero-txt h1 {
+            font-size: 2rem;
+        }
+}
+
+@media(max-width: 852px) {
+    .nbar {
+        padding: 12px 4%;
+    }
+
+    #menu i {
+        display: initial;
+        font-size: 4vw;
+        margin-left: 250%;
+    }
+    .navl {
+        position: absolute;
+        top: -770px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #f5f5f5;
+        box-shadow: 4px 4px 0 4px rgb(15 54 55 / 15%);
+        transition: .2s all linear;
+        text-align: left;
+    }
+    .navl li a{
+        padding: 2vw;
+        margin: 1rem;
+        display: block;
+        font-size: 4vw;
+    }
+
+    .nbar #cart {
+        font-size: 4vw;
+    }
+    .navl.active {
+        top: 100%;
+    }
+
+    #hero-txt {
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -30%);
+    }
+    
+    #hero-txt h1 {
+    padding-top: 30%;
+    font-size: 7vw;
+    }
+    #hero-txt p {
+        font-size: 3vw;
+
+        margin-bottom: 2vw;
+    }
+    #hero-txt button {
+        font-size: 3.5vw;
+        margin-top: 2vw;
+    }
+
+    #hero-txt button i{
+        font-size: 3.5vw;
+    }
+
+    #ctgs {
+        width: 100%;
+        height: 60%;
+    }
+    #cont {
+        
+        flex-direction: column;
+    }
+    #cont h1 {
+        
+        font-size: 4vw;
+    }
+    #cont button {
+        font-size: 3.5vw;
+    }
+    #cont button i {
+        font-size: 3.5vw;
+    }
+
+     #cards #card1  {
+        height: 450px;
+        width: 350px;
+    }
+    #cards #card1 h3 {
+        font-size: 3vw;
+    }
+    #cards #card1 p {
+        font-size: 3vw;
+    }
+    #xh {
+        
+        flex-direction: column;
+    }
+    #xh h1 {
+        margin-top: 5%;
+        font-size: 4vw;
+    }
+    #xh button {
+        font-size: 3.5vw;
+    }
+    #xh button i {
+        font-size: 3.5vw;
+    }
+    #bxs #bx {
+        padding: 50px 40px;
+    }
+    #bxs #bx p {
+        font-size: 2.9vw;
+        font-weight: 500;
+    }
+    #bxs #bx h3 {
+        font-size: 3.3vw;
+        font-weight: 600;
+    }
+
+    #bxs #bx .pr  {
+    font-size: 3vw;
+    }
+
+    #bxs #bx .pr span {
+        font-size: 2vw;
+    }
+    #bxs #bx .ri-heart-fill {
+        font-size: 5vw;
+        
+    }
+    #bxs #bx .ri-shopping-cart-2-fill {
+        font-size: 5vw;
+        margin-right: 6%;
+    }
+
+    #bxs #bx .dc  {
+        font-size: 4vw;
+    }
+    #about {
+        height: 90%;
+        flex-direction: column-reverse;
+    }
+
+    #about #atxt {
+        align-items: center;
+        text-align: center;
+    }
+    #about #atxt h1 {
+        font-size: 4vw;
+        margin-bottom: 4%;
+    }
+    #about #atxt  p {
+        font-size: 3vw;
+    }
+    #about #atxt button {
+        margin-top: 5%;
+        font-size: 3.5vw;
+    }
+    #about #atxt button i {
+        font-size: 3.5vw;
+    }
+   
+    #cutm {
+        width: 100%;
+        
+        padding: 2vw 4vw;
+    } 
+
+    #cutm #cc {
+        width: 100%;
+
+    }
+
+    #cc #cutm {
+        width: 50%;
+    }
+    #ft {
+        flex-direction: column-reverse;
+        
+        padding-bottom: 11%;
+    }
+    #ft h1 {
+        font-size: 5vw;
+        margin-bottom: 25%;
+    }
+    #ft #sc {
+        display: flex;
+        gap: 7%
+    }
+    #ft #sc i {
+        font-size: 9vw;
+     }
+}
+
+@media(max-width:500px) {
+    
+    #nbar {
+        padding: 2vw 16vw;
+    }
+    #menu {
+        margin-right: 5%;
+    }
+    #menu .ri-menu-line {
+        font-size: 8vw;
+        
+    }
+    #cart {
+        padding-right: 5%;
+    }
+    #cart .ri-shopping-cart-line {
+        padding: 0 55%;
+        
+        font-size: 8vw;
+
+    }
+
+    #prds {
+        padding-top: 20%;
+    }
+
+    
+    #hero {
+        width: 100%;
+        height: 90%;
+        margin-top: 10%;
+    }
+
+    #hero-txt {
+        width: 100%;
+    }
+    #hero-txt h1 {
+        font-size: 8vw;
+    }
+
+    #hero-txt p {
+        font-size: 4vw;
+    }
+    #hero-txt button {
+        font-size: 5vw;
+    }
+    #cont h1 {
+        font-size: 6vw;
+        padding-top: 15%;
+    }
+    #cont button {
+        margin-bottom: 4%;
+        font-size: 5vw;
+    }
+    #cards {
+        padding-top: 20%;
+        height: 100%;
+    }
+    #cards #card1 {
+        position: relative;
+        height: 400px;
+        width: 300px;
+    }
+    
+    #cards #card1 h3 {
+        font-size: 4vw;
+    }
+    #cards #card1 p {
+        font-size: 3.8vw;
+        line-height: 3;
+        font-weight: 800;
+    }
+    #prds {
+        margin-top: 30%;
+    }
+    #prds button {
+        margin-top: 12%;
+        margin-bottom: 5%;
+        font-size: 5vw;
+    }
+    #bxs #bx p {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    #bxs #bx h3 {
+        font-size: 8vw;
+        font-weight: 700;
+    }
+
+    #bxs #bx .pr  {
+    font-size: 7vw;
+    }
+
+    #bxs #bx .pr span {
+        font-size: 5vw;
+    }
+    #bxs #bx .ri-heart-fill {
+        font-size: 8vw;
+        
+    }
+    #bxs #bx .ri-shopping-cart-2-fill {
+        font-size: 8vw;
+        margin-right: 6%;
+    }
+
+    #bxs #bx .dc  {
+        font-size: 7vw;
+    }
+    #about {
+        margin-top: 95%;
+    }
+    #about #atxt h1 {
+        font-size: 6vw;
+    }
+    #about #atxt  p {
+        font-size: 4vw;
+
+    }
+    #about #atxt button {
+        font-size: 5vw;
+    }
+    #about #atxt button i {
+        font-size: 5vw;
+    }
+    #about #img5 img {
+        width: 360px;
+        height: 270px;
+    }
+
+    #rp h3 {
+        font-size: 3vw;
+    }
+    #ft img {
+        width: 340px;
+        height: 400px;
+    }
+}
